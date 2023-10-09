@@ -1,0 +1,7 @@
+[user]
+	name = Clara Smyth
+	email = 106271826+ClaraSmyth@users.noreply.github.com
+[color]
+	ui = auto
+[pull]
+	rebase = false

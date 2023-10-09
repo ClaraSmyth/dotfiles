@@ -1,0 +1,144 @@
+{
+    "layer": "top",
+    "output": "DP-1",
+    "position": "top",
+    "spacing": 10,
+    "margin": "10 20 0 20",
+
+    // Choose the order of the modules
+    
+    "modules-left": ["group/apps" ],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["group/hardware-info", "group/system"],
+
+    // Module Groups
+
+    "group/apps": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/launcher",
+            "wlr/taskbar",
+        ]
+    },
+        
+    "group/hardware-info": {
+      "orientation": "horizontal",
+        "modules": [        
+            "cpu",
+            "custom/cpu-icon",
+            "memory",
+            "custom/memory-icon",
+            "temperature",
+        ]  
+    },
+
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": [
+            "group/system-controls",
+            "clock"  
+        ]
+    },
+    
+    "group/system-controls": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "custom/pulseaudio-icon",
+            "network",
+            "custom/power",
+        ]
+    },
+
+    // Modules configuration
+
+    // App group
+    
+    "custom/launcher":{
+        "format": "",
+        "on-click": "wofi",
+        "on-click-right": "killall wofi",
+        "tooltip": false
+    },
+    
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 20,
+        "icon-theme": "Tela-circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [],
+        "app_ids-mapping": {
+          "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox"
+        }
+    },
+
+    // Workspaces group
+    
+    "hyprland/workspaces": {
+        "format": "",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "persistent_workspaces": {
+            "*": 3
+        }
+    },
+
+    // System info
+
+    "cpu": {
+        "format": "{usage}%"
+    },
+    
+    "custom/cpu-icon": {
+        "format": " ",
+        "tooltip": false
+    },
+    
+    "memory": {
+        "format": "{}%"
+    },
+
+    "custom/memory-icon": {
+        "format": " ",
+        "tooltip": false
+    },
+
+    "temperature": {
+        "format": "{temperatureC}°C"
+    },    
+
+    // System controls
+
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false  
+    },
+
+    "network": {
+        "format-ethernet": "",
+        "format-disconnected": "",        
+        "tooltip": false
+    },
+
+    "clock": {
+        "tooltip-format": "{:%d-%m-%Y}"
+    },
+            
+    "pulseaudio": {
+        "format": "{volume}%",
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+    "custom/pulseaudio-icon": {
+        "format": "",
+        "format-muted": "",
+        "tooltip": false
+    },
+}

@@ -1,0 +1,190 @@
+@import "./colors.css";
+
+* {
+  font-family: "CaskaydiaCove Nerd Font Mono";
+  background: none;
+  color: @base06;
+}
+
+window#waybar {
+  border: none;
+  background-color: transparent;
+}
+
+/*############################################
+                APP GROUP
+############################################*/
+
+#apps {
+  background-color: @base06;
+  border-radius: 10px;
+  border: 2px solid @base06;
+}
+
+#custom-launcher {
+  padding: 0px 10px;
+  color: @base00;
+
+  /* Adjust icon size for different fonts */
+  font-size: 30px;
+}
+
+#taskbar button {
+  all: unset;
+  background-color: @base00;
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-position: center bottom;
+  padding: 0px 10px;
+  transition: background 300ms ease-in;
+}
+
+#taskbar button:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+
+#taskbar button:last-child {
+  border-radius: 0px 8px 8px 0px;
+}
+
+#taskbar button:only-child {
+  border-radius: 8px;
+}
+
+#taskbar button:hover {
+  background-image: url("./circle.svg");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  padding: 0px 10px;
+}
+
+/*############################################
+                WORKSPACES
+############################################*/
+
+#workspaces {
+  background-color: @base00;
+  border-radius: 10px;
+  border: 2px solid @base06;
+}
+
+#workspaces button {
+  all: unset;
+  background-image: url("./circle.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  opacity: 0.2;
+  transition: opacity 500ms ease-in;
+}
+
+#workspaces button.active {
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  opacity: 1;
+}
+
+/*############################################
+                SYSTEM CONTROLS
+############################################*/
+
+#system {
+  background-color: @base06;
+  border: 2px solid @base06;
+  border-radius: 10px;
+}
+
+#system-controls {
+  background-color: @base00;
+  border-radius: 8px;
+}
+
+#custom-power.text-button:hover {
+  all: unset;
+  background-color: red;
+}
+
+#clock {
+  background-color: @base06;
+  border-radius: 0px 6px 6px 0px;
+  padding: 0px 10px;
+  color: @base00;
+  font-weight: 600;
+}
+
+#custom-power {
+  font-family: "Font Awesome 6 Free";
+  font-size: 16px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-position: center bottom;
+  padding: 0px 10px;
+  margin-top: 0px;
+}
+
+#custom-power:hover {
+  background-image: url("./circle.svg");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+}
+
+#network {
+  font-family: "Font Awesome 6 Free";
+  font-size: 16px;
+  padding: 0px 10px;
+  margin-top: -1px;
+}
+
+#pulseaudio {
+  border-radius: 10px 0px 0px 10px;
+  padding: 0px 10px;
+}
+
+#custom-pulseaudio-icon {
+  font-family: "Font Awesome 6 Free";
+  font-size: 16px;
+  border-radius: 0px 10px 10px 0px;
+  padding-right: 10px;
+  margin-top: -1px;
+}
+
+/*############################################
+                SYSTEM INFO
+############################################*/
+
+#hardware-info {
+  background-color: @base00;
+  border: 2px solid @base06;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+#cpu {
+  border-radius: 10px 0px 0px 10px;
+}
+
+#custom-cpu-icon,
+#custom-memory-icon {
+  font-family: "Font Awesome 6 Free";
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 2px;
+  margin-top: -2px;
+}
+
+/*############################################
+                Tooltips
+############################################*/
+
+tooltip {
+  background-color: @base00;
+  border-radius: 10px;
+  border: 2px solid @base06;
+}
