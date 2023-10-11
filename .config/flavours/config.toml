@@ -6,7 +6,6 @@ shell = "fish -c '{}'"
 [[items]]
 file = "~/.config/hypr/colors.conf"
 template = "hyprland"
-subtemplate = "colors"
 rewrite = true
 hook = "hyprctl reload"
 
@@ -72,7 +71,7 @@ rewrite = true
 # Firefox
 
 [[item]]
-file = "~/.mozilla/firefox/r8m54vgt.default-release/chrome/includes/cascade-colours.css"
+file = "~/.config/cascade/chrome/includes/cascade-colours.css"
 template = "cascade-firefox"
 start = "/* Start flavours */"
 end = "/* End flavours */"
