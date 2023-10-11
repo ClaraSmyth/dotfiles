@@ -13,5 +13,4 @@ set -Ux HELIX_RUNTIME '/home/clara/.local/share/helix/runtime'
 set -Ux NNN_FIFO '/tmp/nnn.fifo'
 set -Ux NNN_PLUG 'p:preview-tui'
 set -Ux EDITOR 'hx'
- 
-alias n="nnn"
+
