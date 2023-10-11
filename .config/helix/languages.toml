@@ -1,5 +1,6 @@
 [[language]]
 name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
 
@@ -10,15 +11,31 @@ auto-format = true
 
 [[language]]
 name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "css"] }
 auto-format = true
 
 [[language]]
 name = "javascript"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
+
