@@ -16,6 +16,13 @@ file = "~/.config/wezterm/colors.lua"
 template = "wezterm"
 rewrite = true
 
+# Zellij
+
+[[item]]
+file = "~/.config/zellij/themes/theme.kdl"
+template = "zellij"
+rewrite = true
+
 # nnn
 
 [[items]]
@@ -61,11 +68,10 @@ template = "dunst"
 file = "~/.config/swaylock/config"
 template = "swaylock"
 
-# Wlogout
-
+# Wlogout - Uses same template format as waybar
 [[item]]
 file = "~/.config/wlogout/colors.css"
-template = "waybar" # Uses same format as waybar
+template = "waybar"
 rewrite = true
 
 # Firefox
@@ -121,4 +127,3 @@ file = "~/.config/wlogout/icons/reboot.svg"
 template = "svg"
 subtemplate = "reboot"
 rewrite = true
-
