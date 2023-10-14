@@ -25,7 +25,7 @@
 | Audio                | [Easy Effects](https://github.com/wwmm/easyeffects)                         |
 | Browser              | [Firefox](https://mozilla.org/)                                             |
 | Firefox CSS          | [Cascade](https://github.com/andreasgrafen/cascade/)                        |
-
+| Input Remapper       | [Evremap](https://github.com/wez/evremap)                                   |
 
 ### Credits/Inspiration
 
