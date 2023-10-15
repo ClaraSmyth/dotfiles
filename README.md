@@ -27,6 +27,11 @@
 | Firefox CSS          | [Cascade](https://github.com/andreasgrafen/cascade/)                        |
 | Input Remapper       | [Evremap](https://github.com/wez/evremap)                                   |
 
+### Some images
+<img src="./readme-assets/image-1.png" alt="Image of dotfiles" />
+<img src="./readme-assets/image-2.png" alt="Image of dotfiles" />
+<img src="./readme-assets/image-3.png" alt="Image of dotfiles" />
+
 ### Credits/Inspiration
 
 - [Misterio77](https://github.com/Misterio77)
