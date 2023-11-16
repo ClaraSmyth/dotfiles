@@ -26,6 +26,9 @@
 | Browser              | [Firefox](https://mozilla.org/)                                             |
 | Firefox CSS          | [Cascade](https://github.com/andreasgrafen/cascade/)                        |
 | Input Remapper       | [Evremap](https://github.com/wez/evremap)                                   |
+| Git Terminal GUI     | [Gitui](https://github.com/extrawurst/gitui)                                |
+| Node Manager         | [Fnm](https://github.com/Schniz/fnm)                                        |
+| Alt Node PM          | [Pnpm](https://github.com/Schniz/fnm)                                       |
 
 ### Some images
 <img src="./readme-assets/image-1.png" alt="Image of dotfiles" />
