@@ -5,3 +5,5 @@
 	ui = auto
 [pull]
 	rebase = false
+[core]
+	excludesfile = /home/clara/.gitignore_global
