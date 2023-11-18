@@ -40,6 +40,13 @@ template = "helix"
 rewrite = true
 hook = "pkill -USR1 hx"
 
+# Nvim
+
+[[items]]
+file = "~/.local/share/nvim/lazy/nvim-base16/colors/base16-custom.vim"
+template = "nvim"
+rewrite = true
+
 # Wofi
 
 [[item]]
