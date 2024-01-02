@@ -34,7 +34,6 @@
 
 <img src="./readme-assets/image-1.png" alt="Image of dotfiles" />
 <img src="./readme-assets/image-2.png" alt="Image of dotfiles" />
-<img src="./readme-assets/image-3.png" alt="Image of dotfiles" />
 
 ### Credits/Inspiration
 
