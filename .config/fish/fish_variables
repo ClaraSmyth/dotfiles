@@ -4,7 +4,7 @@ SETUVAR --export EDITOR:nvim
 SETUVAR --export HELIX_RUNTIME:/home/clara/\x2elocal/share/helix/runtime
 SETUVAR --export NNN_FCOLORS:b6b6b6b6bdbdd8bdcc3b3b98
 SETUVAR --export NNN_FIFO:/tmp/nnn\x2efifo
-SETUVAR --export NNN_PLUG:p\x3apreview\x2dtui
+SETUVAR --export NNN_PLUG:p\x3apreview\x2dtui\x3bd\x3adragdrop
 SETUVAR --export PNPM_HOME:/home/clara/\x2elocal/share/pnpm
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
