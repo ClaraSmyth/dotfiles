@@ -16,3 +16,4 @@ set -Ux EDITOR nvim
 
 alias z='zellij'
 alias hx='helix'
+alias pnpx='pnpm dlx'
