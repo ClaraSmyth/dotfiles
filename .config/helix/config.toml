@@ -11,6 +11,8 @@ bufferline = "always"
 "A-." = "goto_next_buffer"
 "A-w" = ":buffer-close"
 "A-/" = "repeat_last_motion"
+"C-u" = ["half_page_up", "goto_window_center"]
+"C-d" = ["half_page_down", "goto_window_center"]
 esc = ["collapse_selection", "keep_primary_selection"]
 
 [editor.cursor-shape]
