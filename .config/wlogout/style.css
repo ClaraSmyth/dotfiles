@@ -1,0 +1,49 @@
+@import "./colors.css";
+
+* {
+  font-family: "CaskaydiaMono Nerd Font Mono";
+	background-image: none;
+}
+window {
+	background-color: rgba(12, 12, 12, 0.1);
+}
+button {
+  color: @base06;
+	background-color: alpha(@base00, 0.7);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;  
+	border: 4px solid alpha(@base06, 1);
+  border-radius: 0px;
+  margin: 10px;
+  outline: none;
+}
+
+button:focus, button:active, button:hover {
+	background-color: alpha(@base03, 0.7);
+	outline-style: none;
+}
+
+#lock {
+  background-image: url("./icons/lock.svg");
+}
+
+#logout {
+  background-image: url("./icons/logout.svg");
+}
+
+#suspend {
+  background-image: url("./icons/suspend.svg");
+}
+
+#hibernate {
+  background-image: url("./icons/hibernate.svg");
+}
+
+#shutdown {
+  background-image: url("./icons/shutdown.svg");
+}
+
+#reboot {
+  background-image: url("./icons/reboot.svg");
+}

@@ -1,0 +1,103 @@
+@import "./colors.css";
+
+* {
+  font-family: "CaskaydiaMono Nerd Font Mono";
+  background: none;
+  color: @base06;
+  font-size: 12px;
+}
+
+window#waybar {
+  border: none;
+  background-color: @base00;
+}
+
+/*############################################
+                APP GROUP
+############################################*/
+
+#apps {
+  margin-left: 10px;
+}
+
+#custom-launcher {
+  font-size: 30px;
+}
+
+#custom-spacer {
+  margin-left: 10px;
+}
+
+#taskbar {
+  margin: 0px 5px;
+}
+
+#taskbar button {
+  all: unset;
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-position: center bottom;
+  padding: 0px 5px;
+  transition: background 250ms ease-in;
+}
+
+#taskbar button:hover {
+  background-image: url("./circle.svg");
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+  padding: 0px 5px;
+}
+
+/*############################################
+                WORKSPACES
+############################################*/
+
+#workspaces {
+}
+
+#workspaces button {
+  all: unset;
+  background-image: url("./circle.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  opacity: 0.2;
+  transition: opacity 250ms ease-in;
+}
+
+#workspaces button.active {
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  opacity: 1;
+}
+
+/*############################################
+                SYSTEM CONTROLS
+############################################*/
+
+#system {
+  margin: 0px 10px;
+}
+
+#clock {
+  color: @base06;
+  margin-right: 15px;
+}
+
+#custom-power {
+  font-size: 22px;
+}
+
+#network {
+  font-size: 26px;
+  margin: 0px 15px;
+}
+
+#pulseaudio {
+  font-size: 26px;
+}
