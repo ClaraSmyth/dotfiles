@@ -1,20 +1,5 @@
 #### Language servers
 
-# Go
-[language-server.golangci-lint-lsp]
-command = "golangci-lint-langserver"
-
-[language-server.golangci-lint-lsp.config]
-command = [
-  "golangci-lint",
-  "run",
-  "--enable-all",
-  "--out-format",
-  "json",
-  "--issues-exit-code=1",
-  "--allow-parallel-runners=true",
-]
-
 # Prettier
 [language-server.efm-lsp-prettier]
 command = "efm-langserver"
@@ -87,7 +72,6 @@ config = { "typescript" = { "tsdk" = "/home/clara/.local/share/pnpm/global/5/nod
 
 [[language]]
 name = "go"
-language-servers = ["gopls", "golangci-lint-lsp"]
 formatter = { command = "goimports" }
 auto-format = true
 
