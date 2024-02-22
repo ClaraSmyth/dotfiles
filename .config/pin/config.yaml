@@ -1,5 +1,5 @@
 # Change the default shell and any required args
-DefaultShell: sh -c
+DefaultShell: fish -c
 
 # Change the default start string to search for when inserting templates
 InsertStart: START_PIN_HERE

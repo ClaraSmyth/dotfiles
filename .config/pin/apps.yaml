@@ -5,6 +5,13 @@ Dunst:
     hook: killall dunst
     active: true
     rewrite: false
+Gtk-3:
+    name: Gtk-3
+    path: /home/clara/.local/share/themes/adw-gtk3-dark/gtk-3.0/gtk-dark.css
+    template: /home/clara/.config/pin/templates/Gtk-3/Main.mustache
+    hook: ~/scripts/reload_gtk.sh
+    active: true
+    rewrite: false
 Helix:
     name: Helix
     path: /home/clara/.config/helix/themes/theme.toml
