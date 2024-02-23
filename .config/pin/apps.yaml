@@ -51,7 +51,7 @@ Waybar:
     name: Waybar
     path: /home/clara/.config/waybar/colors.css
     template: /home/clara/.config/pin/templates/Waybar/Transparent.mustache
-    hook: killall -SIGUSR2 waybar
+    hook: ""
     active: true
     rewrite: true
 Waybar-Circle:
