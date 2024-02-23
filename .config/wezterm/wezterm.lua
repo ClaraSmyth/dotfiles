@@ -15,12 +15,13 @@ end
 
 config.default_prog = { "/bin/fish" }
 
-config.font = wezterm.font("CaskaydiaCove Nerd Font Mono")
+config.font = wezterm.font_with_fallback { "CaskaydiaMono Nerd Font Mono", "Symbols Nerd Font Mono", "Noto Color Emoji" }
+
 
 config.hide_tab_bar_if_only_one_tab = true
 config.window_close_confirmation = "NeverPrompt"
 
--- Apply colors from flavours base16 template
+-- Apply colors
 colors.apply(config)
 
 -- and finally, return the configuration to wezterm

@@ -2,5 +2,5 @@
     "device": "alsa_output.usb-Native_Instruments_Komplete_Audio_1_0000495F-00.analog-stereo",
     "device-description": "Komplete Audio 1 Analog Stereo",
     "device-profile": "analog-output",
-    "preset-name": "main"
+    "preset-name": "Custom"
 }

@@ -1,0 +1,126 @@
+Dunst:
+    name: Dunst
+    path: /home/clara/.config/dunst/dunstrc
+    template: /home/clara/.config/pin/templates/Dunst/Main.mustache
+    hook: killall dunst
+    active: true
+    rewrite: false
+Gtk-3:
+    name: Gtk-3
+    path: /home/clara/.local/share/themes/adw-gtk3-dark/gtk-3.0/gtk-dark.css
+    template: /home/clara/.config/pin/templates/Gtk-3/Main.mustache
+    hook: ~/scripts/reload_gtk.sh
+    active: true
+    rewrite: false
+Helix:
+    name: Helix
+    path: /home/clara/.config/helix/themes/theme.toml
+    template: /home/clara/.config/pin/templates/Helix/Transparent.mustache
+    hook: pkill -USR1 hx
+    active: true
+    rewrite: true
+Hyprland:
+    name: Hyprland
+    path: /home/clara/.config/hypr/colors.conf
+    template: /home/clara/.config/pin/templates/Hyprland/Main.mustache
+    hook: hyprctl reload
+    active: true
+    rewrite: true
+Swaylock:
+    name: Swaylock
+    path: /home/clara/.config/swaylock/config
+    template: /home/clara/.config/pin/templates/Swaylock/Main.mustache
+    hook: ""
+    active: true
+    rewrite: false
+Tmux:
+    name: Tmux
+    path: /home/clara/.config/tmux/tmux.conf
+    template: /home/clara/.config/pin/templates/Tmux/Main.mustache
+    hook: tmux source ~/.config/tmux/tmux.conf
+    active: true
+    rewrite: false
+Tofi:
+    name: Tofi
+    path: /home/clara/.config/tofi/config
+    template: /home/clara/.config/pin/templates/Tofi/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Waybar:
+    name: Waybar
+    path: /home/clara/.config/waybar/colors.css
+    template: /home/clara/.config/pin/templates/Waybar/Transparent.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Waybar-Circle:
+    name: Waybar-Circle
+    path: /home/clara/.config/waybar/circle.svg
+    template: /home/clara/.config/pin/templates/Waybar-Circle/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wezterm:
+    name: Wezterm
+    path: /home/clara/.config/wezterm/colors.lua
+    template: /home/clara/.config/pin/templates/Wezterm/Transparent.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wlogout:
+    name: Wlogout
+    path: /home/clara/.config/wlogout/colors.css
+    template: /home/clara/.config/pin/templates/Wlogout/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wlogout-Hibernate:
+    name: Wlogout-Hibernate
+    path: /home/clara/.config/wlogout/icons/hibernate.svg
+    template: /home/clara/.config/pin/templates/Wlogout-Hibernate/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wlogout-Lock:
+    name: Wlogout-Lock
+    path: /home/clara/.config/wlogout/icons/lock.svg
+    template: /home/clara/.config/pin/templates/Wlogout-Lock/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wlogout-Logout:
+    name: Wlogout-Logout
+    path: /home/clara/.config/wlogout/icons/logout.svg
+    template: /home/clara/.config/pin/templates/Wlogout-Logout/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wlogout-Reboot:
+    name: Wlogout-Reboot
+    path: /home/clara/.config/wlogout/icons/reboot.svg
+    template: /home/clara/.config/pin/templates/Wlogout-Reboot/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wlogout-Shutdown:
+    name: Wlogout-Shutdown
+    path: /home/clara/.config/wlogout/icons/shutdown.svg
+    template: /home/clara/.config/pin/templates/Wlogout-Shutdown/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Wlogout-Suspend:
+    name: Wlogout-Suspend
+    path: /home/clara/.config/wlogout/icons/suspend.svg
+    template: /home/clara/.config/pin/templates/Wlogout-Suspend/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
+Yazi:
+    name: Yazi
+    path: /home/clara/.config/yazi/theme.toml
+    template: /home/clara/.config/pin/templates/Yazi/Main.mustache
+    hook: ""
+    active: true
+    rewrite: false

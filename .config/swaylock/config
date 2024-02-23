@@ -1,5 +1,5 @@
 ignore-empty-password
-font=CaskaydiaCove Nerd Font Mono
+font=CaskaydiaMono Nerd Font Mono
 
 clock
 timestr=%R
@@ -19,9 +19,9 @@ indicator-caps-lock
 grace=2
 fade-in=0.2
 
-# Start flavours
+# START_PIN_HERE
 color=e0def4
-inside-color=232136
+inside-color=191724
 line-color=e0def4
 ring-color=e0def4
 text-color=e0def4
@@ -29,17 +29,17 @@ text-color=e0def4
 layout-bg-color=e0def4
 layout-text-color=e0def4
 
-inside-clear-color=232136
+inside-clear-color=191724
 line-clear-color=e0def4
 ring-clear-color=e0def4
 text-clear-color=e0def4
 
-inside-ver-color=232136
+inside-ver-color=191724
 line-ver-color=e0def4
 ring-ver-color=e0def4
 text-ver-color=e0def4
 
-inside-wrong-color=232136
+inside-wrong-color=191724
 line-wrong-color=eb6f92
 ring-wrong-color=eb6f92
 text-wrong-color=eb6f92
@@ -49,4 +49,4 @@ key-hl-color=c4a7e7
 
 separator-color=c4a7e7
 text-caps-lock-color=e0def4
-# End flavours
+# END_PIN_HERE

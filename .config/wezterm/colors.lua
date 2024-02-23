@@ -1,4 +1,4 @@
--- Base16 Rosé Pine Moon
+-- Base16 Rosé Pine
 -- Scheme by Emilia Dunfelt &lt;edun@dunfelt.se&gt;
 -- Template by Clara (https://github.com/ClaraSmyth)
 
@@ -7,18 +7,18 @@ local module = {}
 function module.apply(config)
 	config.colors = {
 		foreground = "#e0def4",
-		background = "#232136",
+		background = "rgba(25,23,36,0.5)",
 		cursor_bg = "#e0def4",
 		cursor_border = "#e0def4",
 		selection_bg = "#e0def4",
-		selection_fg = "#232136",
-		split = "#393552",
+		selection_fg = "#191724",
+		split = "#26233a",
 
 		ansi = {
-			"#232136",
+			"#191724",
 			"#eb6f92",
-			"#3e8fb0",
-			"#ea9a97",
+			"#31748f",
+			"#ebbcba",
 			"#c4a7e7",
 			"#f6c177",
 			"#9ccfd8",
@@ -28,47 +28,47 @@ function module.apply(config)
 		brights = {
 			"#6e6a86",
 			"#eb6f92",
-			"#3e8fb0",
-			"#ea9a97",
+			"#31748f",
+			"#ebbcba",
 			"#c4a7e7",
 			"#f6c177",
 			"#9ccfd8",
-			"#56526e",
+			"#524f67",
 		},
 
 		tab_bar = {
-			background = "#393552",
+			background = "#26233a",
 
 			active_tab = {
-				bg_color = "#232136",
+				bg_color = "#191724",
 				fg_color = "#e0def4",
 			},
 
 			inactive_tab = {
-				bg_color = "#393552",
+				bg_color = "#26233a",
 				fg_color = "e0def4",
 			},
 
 			inactive_tab_hover = {
-				bg_color = "#232136",
+				bg_color = "#191724",
 				fg_color = "#e0def4",
 			},
 
 			new_tab = {
-				bg_color = "#232136",
+				bg_color = "#191724",
 				fg_color = "#e0def4",
 			},
 
 			new_tab_hover = {
-				bg_color = "#232136",
+				bg_color = "#191724",
 				fg_color = "#e0def4",
 			},
 		},
 	}
 
 	config.window_frame = {
-		active_titlebar_bg = "#393552",
-		inactive_titlebar_bg = "#393552",
+		active_titlebar_bg = "#26233a",
+		inactive_titlebar_bg = "#26233a",
 	}
 end
 

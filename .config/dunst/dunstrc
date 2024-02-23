@@ -1,22 +1,22 @@
 # See dunst(5) for all configuration options
 
-# Start flavours
+# START_PIN_HERE
 [global]
-	frame_color = "#e0def4"
+	frame_color = "#c4a7e7"
 	separator_color = "#e0def4"
 
 [urgency_low]
-    background = "#232136"
+    background = "#191724"
     foreground = "#e0def4"
 
 [urgency_normal]
-    background = "#232136"
+    background = "#191724"
     foreground = "#e0def4"
 
 [urgency_critical]
     background = "#eb6f92"
     foreground = "#e0def4"
-# End flavours
+# END_PIN_HERE
 
 [global]
     ### Display ###
@@ -48,10 +48,10 @@
     height = 300
 
     # Position the notification in the top right corner
-    origin = top-center
+    origin = top-right
 
     # Offset from the origin
-    offset = 0x30
+    offset = 20x20
     
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -141,7 +141,7 @@
 
     ### Text ###
 
-    font = CaskaydiaCove Nerd Font Mono 10
+    font = CaskaydiaMono Nerd Font Mono 10
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -268,7 +268,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 10
+    corner_radius = 0
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this

@@ -1,7 +1,0 @@
-{
-  "iferr": {
-    "prefix": "iferr",
-    "body": "if err != nil {\n panic(err)\n}",
-    "description": "Snippet for if err block"
-  }
-}
