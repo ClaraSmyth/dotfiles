@@ -1,0 +1,97 @@
+{
+  "layer": "top",
+  "output": "DP-1",
+  "position": "top",
+  "spacing": 0,
+  "margin": "0",
+  "reload_style_on_change": true,
+
+  "modules-left": ["group/apps"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["group/system"],
+
+  "group/apps": {
+    "orientation": "horizontal",
+    "modules": ["custom/launcher", "custom/spacer", "wlr/taskbar"]
+  },
+
+  "group/hardware-info": {
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "custom/cpu-icon",
+      "memory",
+      "custom/memory-icon",
+      "temperature"
+    ]
+  },
+
+  "group/system": {
+    "orientation": "horizontal",
+    "modules": ["clock", "pulseaudio", "network", "custom/power"]
+  },
+
+  "custom/launcher": {
+    "format": "\udb82\udcc7",
+    "on-click": "sleep 0.1 && tofi-drun | xargs hyprctl dispatch exec --",
+    "tooltip": false
+  },
+
+  "custom/spacer": {
+    "format": "•",
+    "tooltip": false
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 20,
+    "icon-theme": "Tela-circle",
+    "tooltip": false,
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+      "Firefox Web Browser": "Firefox"
+    }
+  },
+
+  "hyprland/workspaces": {
+    "format": "",
+    "on-click": "activate",
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "*": 3
+    }
+  },
+
+  "custom/power": {
+    "format": "\u23fb",
+    "on-click": "sleep 0.1 && wlogout",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-ethernet": "\udb81\udda9",
+    "format-disconnected": "\udb85\udeb5",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%A %b %d  •  %I:%M %p  •}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "\uf026",
+    "format-icons": {
+      "default": ["\uf026", "\uf027", "\uf028"]
+    },
+    "scroll-step": 2,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+    "tooltip": false
+  }
+}
