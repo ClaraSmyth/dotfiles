@@ -1,6 +1,6 @@
 # dotfiles
 
-<img src="./readme-assets/desktop.png" alt="Image of dotfiles" />
+<img src="./readme-assets/desktop.gif" alt="Image of dotfiles" />
 
 ### Things I use
 
@@ -33,7 +33,7 @@
 
 ### Some Images
 
-<img src="./readme-assets/desktop.png" alt="Image of dotfiles" />
+<img src="./readme-assets/desktop.gif" alt="Image of dotfiles" />
 <img src="./readme-assets/launcher.png" alt="Image of dotfiles" />
 <img src="./readme-assets/logout.png" alt="Image of dotfiles" />
 <img src="./readme-assets/lockscreen.png" alt="Image of dotfiles" />
