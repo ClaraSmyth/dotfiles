@@ -3,17 +3,17 @@
 # Prettier
 [language-server.efm-lsp-prettier]
 command = "efm-langserver"
-# required-root-patterns = [
-#   ".prettierrc",
-#   "prettierrc.json",
-#   "prettierrc.js",
-#   "prettierrc.yml",
-#   "prettierrc.yaml",
-#   "prettierrc.json5",
-#   "prettierrc.mjs",
-#   "prettierrc.cjs",
-#   "prettierrc.toml",
-# ]
+required-root-patterns = [
+  ".prettierrc",
+  "prettierrc.json",
+  "prettierrc.js",
+  "prettierrc.yml",
+  "prettierrc.yaml",
+  "prettierrc.json5",
+  "prettierrc.mjs",
+  "prettierrc.cjs",
+  "prettierrc.toml",
+]
 
 [language-server.efm-lsp-prettier.config]
 documentFormatting = true
@@ -37,13 +37,13 @@ languages = { typescript = [
 [language-server.eslint]
 command = "vscode-eslint-language-server"
 args = ["--stdio"]
-# required-root-patterns = [
-#   ".eslintrc.js",
-#   ".eslintrc.cjs",
-#   ".eslintrc.yaml",
-#   ".eslintrc.yml",
-#   ".eslintrc.json",
-# ]
+required-root-patterns = [
+  ".eslintrc.js",
+  ".eslintrc.cjs",
+  ".eslintrc.yaml",
+  ".eslintrc.yml",
+  ".eslintrc.json",
+]
 
 [language-server.eslint.config]
 format = true
