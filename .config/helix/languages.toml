@@ -1,21 +1,10 @@
 #### Language servers
 
-# Prettier
-[language-server.efm-lsp-prettier]
+# Efm
+[language-server.efm-lsp]
 command = "efm-langserver"
-required-root-patterns = [
-  ".prettierrc",
-  "prettierrc.json",
-  "prettierrc.js",
-  "prettierrc.yml",
-  "prettierrc.yaml",
-  "prettierrc.json5",
-  "prettierrc.mjs",
-  "prettierrc.cjs",
-  "prettierrc.toml",
-]
 
-[language-server.efm-lsp-prettier.config]
+[language-server.efm-lsp.config]
 documentFormatting = true
 languages = { typescript = [
   { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
@@ -31,6 +20,8 @@ languages = { typescript = [
   { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
 ], markdown = [
   { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
+], go = [
+  { lintCommand = "golangci-lint run", lintWorkspace = true },
 ] }
 
 # ESLint 
@@ -72,6 +63,7 @@ config = { "typescript" = { "tsdk" = "/home/clara/.local/share/pnpm/global/5/nod
 
 [[language]]
 name = "go"
+language-servers = ["gopls", "efm-lsp"]
 formatter = { command = "goimports" }
 auto-format = true
 
@@ -81,26 +73,18 @@ language-servers = [
   { name = "vscode-json-language-server", except-features = [
     "format",
   ] },
-  "efm-lsp-prettier",
+  "efm-lsp",
 ]
 auto-format = true
 
 [[language]]
 name = "html"
-language-servers = [
-  "vscode-html-language-server",
-  "tailwindcss-ls",
-  "efm-lsp-prettier",
-]
+language-servers = ["vscode-html-language-server", "tailwindcss-ls", "efm-lsp"]
 auto-format = true
 
 [[language]]
 name = "css"
-language-servers = [
-  "vscode-css-language-server",
-  "tailwindcss-ls",
-  "efm-lsp-prettier",
-]
+language-servers = ["vscode-css-language-server", "tailwindcss-ls", "efm-lsp"]
 auto-format = true
 
 [[language]]
@@ -109,7 +93,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = [
     "format",
   ] },
-  "efm-lsp-prettier",
+  "efm-lsp",
   "eslint",
 ]
 auto-format = true
@@ -120,7 +104,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = [
     "format",
   ] },
-  "efm-lsp-prettier",
+  "efm-lsp",
   "eslint",
 ]
 auto-format = true
@@ -131,7 +115,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = [
     "format",
   ] },
-  "efm-lsp-prettier",
+  "efm-lsp",
   "eslint",
 ]
 auto-format = true
@@ -142,7 +126,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = [
     "format",
   ] },
-  "efm-lsp-prettier",
+  "efm-lsp",
   "eslint",
 ]
 auto-format = true
@@ -156,7 +140,7 @@ auto-format = true
 name = "markdown"
 text-width = 80
 soft-wrap = { wrap-at-text-width = true }
-language-servers = ["marksman", "efm-lsp-prettier"]
+language-servers = ["marksman", "efm-lsp"]
 auto-format = true
 
 [[language]]
