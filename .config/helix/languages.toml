@@ -58,6 +58,10 @@ command = "astro-ls"
 args = ["--stdio"]
 config = { "typescript" = { "tsdk" = "/home/clara/.local/share/pnpm/global/5/node_modules/typescript/lib" }, "environment" = "node" }
 
+# Emmet
+[language-server.emmet-ls]
+args = ["--stdio"]
+command = "emmet-ls"
 
 #### Languages
 
@@ -79,7 +83,12 @@ auto-format = true
 
 [[language]]
 name = "html"
-language-servers = ["vscode-html-language-server", "tailwindcss-ls", "efm-lsp"]
+language-servers = [
+  "vscode-html-language-server",
+  "emmet-ls",
+  "tailwindcss-ls",
+  "efm-lsp",
+]
 auto-format = true
 
 [[language]]
@@ -115,6 +124,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = [
     "format",
   ] },
+  "emmet-ls",
   "efm-lsp",
   "eslint",
 ]
@@ -126,6 +136,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = [
     "format",
   ] },
+  "emmet-ls",
   "efm-lsp",
   "eslint",
 ]
@@ -149,6 +160,6 @@ scope = "source.astro"
 injection-regex = "astro"
 file-types = ["astro"]
 roots = ["package.json", "astro.config.mjs"]
-language-servers = ["astro-ls"]
+language-servers = ["astro-ls", "emmet-ls"]
 formatter = { command = 'prettier', args = ["--parser", "astro"] }
 auto-format = true
