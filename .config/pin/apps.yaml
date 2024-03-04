@@ -5,6 +5,13 @@ Dunst:
     hook: killall dunst
     active: true
     rewrite: false
+Foot:
+    name: Foot
+    path: /home/clara/.config/foot/colors.ini
+    template: /home/clara/.config/pin/templates/Foot/Main.mustache
+    hook: ""
+    active: true
+    rewrite: true
 Gtk-3:
     name: Gtk-3
     path: /home/clara/.local/share/themes/adw-gtk3-dark/gtk-3.0/gtk-dark.css
