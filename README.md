@@ -29,6 +29,7 @@
 | Browser           | [Firefox](https://mozilla.org/)                                                    |
 | Input Remapper    | [Evremap](https://github.com/wez/evremap)                                          |
 | Git Terminal GUI  | [Lazygit](https://github.com/jesseduffield/lazygit)                                |
+| Git Diff Pager    | [Delta](https://github.com/dandavison/delta)                                       |
 | Node Manager      | [Pnpm](https://pnpm.io/)                                                           |
 
 ### Some Images
