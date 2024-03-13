@@ -28,3 +28,5 @@
 
 [pull]
 	rebase = false
+[alias]
+	wdiff = diff --word-diff
