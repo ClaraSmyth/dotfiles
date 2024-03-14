@@ -20,8 +20,6 @@ languages = { typescript = [
   { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
 ], markdown = [
   { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-], go = [
-  { lintCommand = "golangci-lint run", lintWorkspace = true },
 ] }
 
 # ESLint 
@@ -66,8 +64,13 @@ command = "emmet-ls"
 #### Languages
 
 [[language]]
+name = "sql"
+formatter = { command = "sleek", args = ["--uppercase"] }
+auto-format = true
+
+
+[[language]]
 name = "go"
-language-servers = ["gopls", "efm-lsp"]
 formatter = { command = "goimports" }
 auto-format = true
 
