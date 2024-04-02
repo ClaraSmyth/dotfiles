@@ -5,5 +5,5 @@
 
 # Using a symlink prevents color shift flash
 
-gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark-alt
+gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark-sym
 gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark

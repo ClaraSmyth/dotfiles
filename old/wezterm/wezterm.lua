@@ -14,9 +14,10 @@ end
 -- This is where you actually apply your config choices
 
 config.default_prog = { "/bin/fish" }
+config.enable_wayland = false
 
-config.font = wezterm.font_with_fallback { "CaskaydiaMono Nerd Font Mono", "Symbols Nerd Font Mono", "Noto Color Emoji" }
-
+config.font = wezterm.font_with_fallback { "CaskaydiaCove Nerd Font Mono", "Symbols Nerd Font Mono", "Noto Color Emoji" }
+config.font_size = 11
 
 config.hide_tab_bar_if_only_one_tab = true
 config.window_close_confirmation = "NeverPrompt"

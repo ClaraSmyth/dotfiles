@@ -10,5 +10,11 @@ set -x SWWW_TRANSITION wipe
 
 starship init fish | source
 
-alias yay="paru"
 alias pnpx="pnpm dlx"
+
+# pnpm
+set -gx PNPM_HOME "/home/clara/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

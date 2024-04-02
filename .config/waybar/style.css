@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-  font-family: "CaskaydiaMono Nerd Font Mono";
+  font-family: "CaskaydiaCove Nerd Font Mono";
   background: none;
   color: @base06;
   font-size: 12px;

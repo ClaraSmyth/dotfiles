@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "output": "DP-1",
+  "output": "DP-2",
   "position": "top",
   "spacing": 0,
   "margin": "0",
@@ -63,7 +63,7 @@
     "on-click": "activate",
     "sort-by-number": true,
     "persistent-workspaces": {
-      "*": 3
+      "DP-2": [1, 2, 3],
     }
   },
 
