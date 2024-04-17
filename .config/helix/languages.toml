@@ -1,38 +1,31 @@
 #### Language servers
 
+# Astro 
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = { "typescript" = { "tsdk" = "/home/clara/.local/share/pnpm/global/5/node_modules/typescript/lib" }, "environment" = "node" }
+
+# Emmet
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+# Biome
+[language-server.biome]
+command = "pnpm"
+args = ["biome", "lsp-proxy"]
+required-root-patterns = ["biome.json"]
+
 # Efm
 [language-server.efm-lsp]
 command = "efm-langserver"
-
-[language-server.efm-lsp.config]
-documentFormatting = true
-languages = { typescript = [
-  { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-], typescriptreact = [
-  { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-], html = [
-  { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-], css = [
-  { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-], scss = [
-  { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-], json = [
-  { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-], markdown = [
-  { formatCommand = "prettierd --stdin-filepath ${INPUT}", formatStdin = true },
-] }
 
 # ESLint 
 [language-server.eslint]
 command = "vscode-eslint-language-server"
 args = ["--stdio"]
-required-root-patterns = [
-  ".eslintrc.js",
-  ".eslintrc.cjs",
-  ".eslintrc.yaml",
-  ".eslintrc.yml",
-  ".eslintrc.json",
-]
+required-root-patterns = [".eslintrc.*", "eslint.config.*"]
 
 [language-server.eslint.config]
 format = true
@@ -49,17 +42,6 @@ codeActionOnSave = { mode = "all" }
 experimental = {}
 problems = { shortenToSingleLine = false }
 workingDirectory = { mode = "auto" }
-
-# Astro 
-[language-server.astro-ls]
-command = "astro-ls"
-args = ["--stdio"]
-config = { "typescript" = { "tsdk" = "/home/clara/.local/share/pnpm/global/5/node_modules/typescript/lib" }, "environment" = "node" }
-
-# Emmet
-[language-server.emmet-lsp]
-command = "emmet-language-server"
-args = ["--stdio"]
 
 #### Languages
 
@@ -96,7 +78,13 @@ auto-format = true
 
 [[language]]
 name = "css"
-language-servers = ["vscode-css-language-server", "tailwindcss-ls", "efm-lsp"]
+language-servers = [
+  { name = "vscode-css-language-server", except-features = [
+    "format",
+  ] },
+  "tailwindcss-ls",
+  "efm-lsp",
+]
 auto-format = true
 
 [[language]]
@@ -107,6 +95,7 @@ language-servers = [
   ] },
   "efm-lsp",
   "eslint",
+  "biome",
 ]
 auto-format = true
 
@@ -118,6 +107,7 @@ language-servers = [
   ] },
   "efm-lsp",
   "eslint",
+  "biome",
 ]
 auto-format = true
 
@@ -130,6 +120,7 @@ language-servers = [
   "emmet-lsp",
   "efm-lsp",
   "eslint",
+  "biome",
 ]
 auto-format = true
 
@@ -142,6 +133,7 @@ language-servers = [
   "emmet-lsp",
   "efm-lsp",
   "eslint",
+  "biome",
 ]
 auto-format = true
 
@@ -151,10 +143,15 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 auto-format = true
 
 [[language]]
+name = "yaml"
+language-servers = ["efm-lsp"]
+auto-format = true
+
+[[language]]
 name = "markdown"
 text-width = 80
 soft-wrap = { wrap-at-text-width = true }
-language-servers = ["marksman", "efm-lsp"]
+language-servers = ["marksman"]
 auto-format = true
 
 [[language]]

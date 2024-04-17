@@ -1,0 +1,63 @@
+version: 2
+lint-debounce: 1s
+tools:
+  prettier: &prettier
+    format-command: "prettier ${INPUT}"
+    format-stdin: true
+
+  prettier-conf: &prettier-conf
+    format-command: "prettier --stdin-filepath ${INPUT}"
+    format-stdin: true
+    require-marker: true
+    root-markers:
+      - .prettierrc
+      - .prettierrc.json
+      - .prettierrc.js
+      - .prettierrc.yml
+      - .prettierrc.yaml
+      - .prettierrc.json5
+      - .prettierrc.mjs
+      - .prettierrc.cjs
+      - .prettierrc.toml
+      - prettier.config.js
+      - prettier.config.cjs
+      - prettier.config.mjs
+
+  biome: &biome
+    format-command: "pnpm biome format --stdin-file-path ${INPUT}"
+    format-stdin: true
+    require-marker: true
+    root-markers:
+      - biome.json
+
+languages:
+  css:
+    - <<: *prettier
+
+  sass:
+    - <<: *prettier
+
+  html:
+    - <<: *prettier
+
+  json:
+    - <<: *prettier
+
+  yaml:
+    - <<: *prettier
+
+  javascript:
+    - <<: *prettier-conf
+    - <<: *biome
+
+  javascriptreact:
+    - <<: *prettier-conf
+    - <<: *biome
+
+  typescript:
+    - <<: *prettier-conf
+    - <<: *biome
+
+  typescriptreact:
+    - <<: *prettier-conf
+    - <<: *biome
