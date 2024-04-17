@@ -1,2 +1,4 @@
-set -x PNPM_HOME '/home/clara/.local/share/pnpm'
-fish_add_path $PNPM_HOME
+set -gx PNPM_HOME "/home/clara/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
