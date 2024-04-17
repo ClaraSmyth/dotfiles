@@ -1,14 +1,10 @@
 version: 2
 lint-debounce: 1s
+document-formatting: true
 tools:
-  prettier: &prettier
-    format-command: "prettier ${INPUT}"
+  prettierd: &prettierd
+    format-command: "prettierd ${INPUT}"
     format-stdin: true
-
-  prettier-conf: &prettier-conf
-    format-command: "prettier --stdin-filepath ${INPUT}"
-    format-stdin: true
-    require-marker: true
     root-markers:
       - .prettierrc
       - .prettierrc.json
@@ -23,41 +19,36 @@ tools:
       - prettier.config.cjs
       - prettier.config.mjs
 
-  biome: &biome
-    format-command: "pnpm biome format --stdin-file-path ${INPUT}"
-    format-stdin: true
-    require-marker: true
-    root-markers:
-      - biome.json
-
 languages:
   css:
-    - <<: *prettier
+    - <<: *prettierd
 
   sass:
-    - <<: *prettier
+    - <<: *prettierd
 
   html:
-    - <<: *prettier
+    - <<: *prettierd
 
   json:
-    - <<: *prettier
+    - <<: *prettierd
 
   yaml:
-    - <<: *prettier
+    - <<: *prettierd
 
   javascript:
-    - <<: *prettier-conf
-    - <<: *biome
+    - <<: *prettierd
 
   javascriptreact:
-    - <<: *prettier-conf
-    - <<: *biome
+    - <<: *prettierd
 
   typescript:
-    - <<: *prettier-conf
-    - <<: *biome
+    - <<: *prettierd
 
   typescriptreact:
-    - <<: *prettier-conf
-    - <<: *biome
+    - <<: *prettierd
+
+  [".svelte"]:
+    - <<: *prettierd
+    
+  [".astro"]:
+    - <<: *prettierd

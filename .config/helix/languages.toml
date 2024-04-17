@@ -11,12 +11,6 @@ config = { "typescript" = { "tsdk" = "/home/clara/.local/share/pnpm/global/5/nod
 command = "emmet-language-server"
 args = ["--stdio"]
 
-# Biome
-[language-server.biome]
-command = "pnpm"
-args = ["biome", "lsp-proxy"]
-required-root-patterns = ["biome.json"]
-
 # Efm
 [language-server.efm-lsp]
 command = "efm-langserver"
@@ -25,7 +19,6 @@ command = "efm-langserver"
 [language-server.eslint]
 command = "vscode-eslint-language-server"
 args = ["--stdio"]
-required-root-patterns = [".eslintrc.*", "eslint.config.*"]
 
 [language-server.eslint.config]
 format = true
@@ -50,7 +43,6 @@ name = "sql"
 formatter = { command = "sleek", args = ["--uppercase"] }
 auto-format = true
 
-
 [[language]]
 name = "go"
 formatter = { command = "goimports" }
@@ -69,7 +61,9 @@ auto-format = true
 [[language]]
 name = "html"
 language-servers = [
-  "vscode-html-language-server",
+  { name = "vscode-html-language-server", except-features = [
+    "format",
+  ] },
   "emmet-lsp",
   "tailwindcss-ls",
   "efm-lsp",
@@ -95,7 +89,6 @@ language-servers = [
   ] },
   "efm-lsp",
   "eslint",
-  "biome",
 ]
 auto-format = true
 
@@ -107,7 +100,6 @@ language-servers = [
   ] },
   "efm-lsp",
   "eslint",
-  "biome",
 ]
 auto-format = true
 
@@ -120,7 +112,6 @@ language-servers = [
   "emmet-lsp",
   "efm-lsp",
   "eslint",
-  "biome",
 ]
 auto-format = true
 
@@ -133,7 +124,6 @@ language-servers = [
   "emmet-lsp",
   "efm-lsp",
   "eslint",
-  "biome",
 ]
 auto-format = true
 
@@ -148,18 +138,19 @@ language-servers = ["efm-lsp"]
 auto-format = true
 
 [[language]]
-name = "markdown"
-text-width = 80
-soft-wrap = { wrap-at-text-width = true }
-language-servers = ["marksman"]
-auto-format = true
-
-[[language]]
 name = "astro"
 scope = "source.astro"
 injection-regex = "astro"
 file-types = ["astro"]
 roots = ["package.json", "astro.config.mjs"]
-language-servers = ["astro-ls", "emmet-lsp"]
-formatter = { command = 'prettier', args = ["--parser", "astro"] }
+language-servers = ["astro-ls", "emmet-lsp", "efm-lsp"]
+auto-format = true
+
+[[language]]
+name = "svelte"
+scope = "source.svelte"
+injection-regex = "svelte"
+file-types = ["svelte"]
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["svelteserver", "emmet-lsp", "efm-lsp", "eslint"]
 auto-format = true
