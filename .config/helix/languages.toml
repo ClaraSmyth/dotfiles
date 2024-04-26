@@ -40,8 +40,8 @@ workingDirectory = { mode = "auto" }
 
 [[language]]
 name = "sql"
-formatter = { command = "sleek", args = ["--uppercase"] }
-auto-format = true
+# formatter = { command = "sleek", args = ["--uppercase"] }
+# auto-format = true
 
 [[language]]
 name = "go"
@@ -61,17 +61,15 @@ auto-format = true
 [[language]]
 name = "html"
 language-servers = [
-  { name = "vscode-html-language-server", except-features = [
-    "format",
-  ] },
+  "vscode-html-language-server",
   "emmet-lsp",
   "tailwindcss-ls",
-  "efm-lsp",
 ]
 auto-format = true
 
 [[language]]
 name = "css"
+file-types = ["css", "pcss", "scss"]
 language-servers = [
   { name = "vscode-css-language-server", except-features = [
     "format",
@@ -112,6 +110,7 @@ language-servers = [
   "emmet-lsp",
   "efm-lsp",
   "eslint",
+  "tailwindcss-ls",
 ]
 auto-format = true
 
@@ -124,6 +123,7 @@ language-servers = [
   "emmet-lsp",
   "efm-lsp",
   "eslint",
+  "tailwindcss-ls",
 ]
 auto-format = true
 
@@ -152,5 +152,11 @@ scope = "source.svelte"
 injection-regex = "svelte"
 file-types = ["svelte"]
 indent = { tab-width = 2, unit = "  " }
-language-servers = ["svelteserver", "emmet-lsp", "efm-lsp", "eslint"]
+language-servers = [
+  "svelteserver",
+  # "emmet-lsp",
+  # "efm-lsp",
+  # "eslint",
+  "tailwindcss-ls",
+]
 auto-format = true
