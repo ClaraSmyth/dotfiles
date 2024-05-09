@@ -35,10 +35,10 @@ Hyprland:
     rewrite: true
 Swaylock:
     name: Swaylock
-    path: /home/clara/.config/swaylock/config
+    path: ""
     template: /home/clara/.config/pin/templates/Swaylock/Main.mustache
     hook: ""
-    active: true
+    active: false
     rewrite: false
 Tmux:
     name: Tmux
