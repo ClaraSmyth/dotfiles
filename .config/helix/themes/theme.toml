@@ -48,7 +48,7 @@
 "ui.background" = {}
 "ui.bufferline.active" = { fg = "base00", bg = "base03", modifiers = ["bold"] }
 "ui.bufferline" = { fg = "base04" }
-"ui.cursor" = { fg = "base0A", modifiers = ["reversed"] }
+"ui.cursor" = { fg = "base0D", modifiers = ["reversed"] }
 "ui.cursor.insert" = { fg = "base0A", modifiers = ["reversed"] }
 "ui.cursorline.primary" = { fg = "base05", bg = "base01" }
 "ui.cursor.match" = { fg = "base0A", modifiers = ["reversed"] }
