@@ -2,6 +2,9 @@
 	name = Clara Smyth
 	email = 106271826+ClaraSmyth@users.noreply.github.com
 
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
 [core]
     pager = delta	
 
