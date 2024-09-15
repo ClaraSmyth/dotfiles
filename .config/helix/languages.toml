@@ -40,8 +40,9 @@ workingDirectory = { mode = "auto" }
 
 [[language]]
 name = "sql"
-# formatter = { command = "sleek", args = ["--uppercase"] }
-# auto-format = true
+# formatter = { command = "sql-formatter", args = ["-l", "postgresql"] }
+formatter = { command = "sleek", args = ["--uppercase"] }
+auto-format = true
 
 [[language]]
 name = "go"
