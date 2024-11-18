@@ -13,7 +13,6 @@
 | Prompt            | [Starship](https://starship.rs/)                                                   |
 | Terminal          | [Foot](https://github.com/DanteAlighierin/foot)                                    |
 | Multiplexer       | [Tmux](https://github.com/tmux/tmux)                                               |
-| Theme Manager     | [Pin](https://github.com/ClaraSmyth/pin)                                           |
 | Editor            | [Helix](https://helix-editor.com/)                                                 |
 | File Manager      | [Yazi](https://github.com/sxyazi/yazi) / [Nemo](https://github.com/linuxmint/nemo) |
 | Bar               | [Waybar](https://github.com/Alexays/Waybar)                                        |
@@ -33,11 +32,3 @@
 | Git Terminal GUI  | [Lazygit](https://github.com/jesseduffield/lazygit)                                |
 | Git Diff Pager    | [Delta](https://github.com/dandavison/delta)                                       |
 | Node Manager      | [Pnpm](https://pnpm.io/)                                                           |
-
-### Some Images
-
-<img src="./readme-assets/desktop.gif" alt="Image of dotfiles" />
-<img src="./readme-assets/launcher.png" alt="Image of dotfiles" />
-<img src="./readme-assets/logout.png" alt="Image of dotfiles" />
-<img src="./readme-assets/lockscreen.png" alt="Image of dotfiles" />
-<img src="./readme-assets/empty.png" alt="Image of dotfiles" />
