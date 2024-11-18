@@ -1,7 +1,5 @@
 # dotfiles
 
-<img src="./readme-assets/desktop.gif" alt="Image of dotfiles" />
-
 ### Things I use
 
 |                   | Packages                                                                           |
